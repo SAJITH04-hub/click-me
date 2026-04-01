@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0d0d0d;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px; 
+    color: #e0e0e0;
+}
+
+
+.instruction-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1a1a1a;
+    color: #00e0ff;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+    text-shadow: 0 0 6px #00d0ff;
+    user-select: none;
+}
+
+
+#secretMessage {
+    font-size: 32px;
+    color: #75ff75;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px #00ff00;
+    max-width: 90vw;
+    text-align: center;
+}
+
+
+#resButton {
+    position: absolute;
+    padding: 18px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #e63946; 
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow:
+        0 0 12px rgba(230, 57, 70, 0.7),
+        0 0 22px rgba(230, 57, 70, 0.6);
+    user-select: none;
+    /* cyh{why_is_th */
+
+    transition: transform 0.1s ease-out;
+
+    left: 50%;
+    top: 50%;
+}
+
+
+#resButton:hover {
+    transform: scale(1.06);
+}
